@@ -1,0 +1,33 @@
+<body>
+    
+{{> header}}
+
+<h1>Since this is my portfolio...</h1>
+<p>Why not trying to comission me if you like what you see here, which contains some more of older work.</p>
+
+<h1>Pixel Art</h1>
+<p>Some of these are actually being used for a game in development by a friend of mine!</p>
+<p>(I should add a link to the relevant site to this sometime.)</p>
+
+<div id="pixel-art-container">
+    {{#each vgs}}
+    {{> portfolio}}
+    {{/each}}
+</div>
+
+<h1>Digital Art</h1>
+
+<div id="digital-art-container">
+    {{#each digiarts}}
+    {{> portfolio}}
+    {{/each}}
+</div>
+
+<h2>Lastly, this site!</h2>
+<h3>If you like how this site looks, I may be able to help you with a thing or two for your very own site!</h3>
+<h3>And likely for much cheaper than someone else since I'm a scrub and I gotta start somewhere.</h3>
+
+<h1>Contact Me</h1>
+<p>this.exists.now.dev@gmail.com</p>
+
+</body>

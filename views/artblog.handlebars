@@ -1,0 +1,17 @@
+  <body> 
+           
+      {{> header}}
+
+      <h1>Art Blog</h1>
+      <p>My most recent works, with a bit of my own personal commentary.</p>
+      <br>
+      <label for="journal-toggle">Toggle Journal Entry Visibility</label>
+      <input type="checkbox" id="journal-toggle">
+      <br><br>
+
+{{#each entries}}
+{{> images}}
+{{/each}}
+
+
+  </body>

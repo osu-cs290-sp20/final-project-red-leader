@@ -1,0 +1,26 @@
+[
+    {
+        "file": "pixel/BlockSentry.png",
+        "title": "Block Sentry"
+    },
+    {
+        "file": "pixel/doberman-side.png",
+        "title": "Doberman"
+    },
+    {
+        "file": "pixel/serpent.png",
+        "title": "Serpent"
+    },
+    {
+        "file": "pixel/Slime_ghost.png",
+        "title": "Slime Ghost"
+    },
+    {
+        "file": "pixel/Squakler.png",
+        "title": "Squak!"
+    },
+    {
+        "file": "pixel/vampyman.png",
+        "title": "Vampire"
+    }
+]

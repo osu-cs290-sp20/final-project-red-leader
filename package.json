@@ -1,0 +1,38 @@
+{
+  "name": "final-project-red-leader",
+  "version": "1.0.0",
+  "description": "CS 290 final",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "handlebars": "^4.7.6",
+    "server": "^1.0.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "npm run build:404 -s && npm run build:home -s && npm run build:artblog -s && npm run build:comission -s && npm run build:newsletter -s && npm run build:main -s && npm run build:header -s && npm run build:images -s && npm run build:portfolio -s",
+    "build:404": "handlebars views/404.handlebars -f public/404.js",
+    "build:home": "handlebars views/home.handlebars -f public/home.js",
+    "build:artblog": "handlebars views/artblog.handlebars -f public/artblog.js",
+    "build:comission": "handlebars views/comission.handlebars -f public/comission.js",
+    "build:newsletter": "handlebars views/newsletter.handlebars -f public/newsletter.js",
+    "build:main": "handlebars views/layouts/main.handlebars -f public/main.js",
+    "build:header": "handlebars views/partials/header.handlebars -f public/header.js",
+    "build:images": "handlebars views/partials/images.handlebars -f public/images.js",
+    "build:portfolio": "handlebars views/partials/portfolio.handlebars -f public/portfolio.js",
+    "prestart": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp20/final-project-red-leader.git"
+  },
+  "author": "David McVittie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp20/final-project-red-leader/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp20/final-project-red-leader#readme"
+}
